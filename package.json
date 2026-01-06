@@ -1,5 +1,5 @@
 {
-  "name": "@sanghyun-org/payapp-react",
+  "name": "payapp-react",
   "version": "1.0.0",
   "description": "PayApp payment integration library for React",
   "keywords": [

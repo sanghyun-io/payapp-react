@@ -1,6 +1,6 @@
-# @sanghyun-org/payapp-react
+# payapp-react
 
-[![npm version](https://badge.fury.io/js/%40sanghyun-org%2Fpayapp-react.svg)](https://www.npmjs.com/package/@sanghyun-org/payapp-react)
+[![npm version](https://badge.fury.io/js/payapp-react.svg)](https://www.npmjs.com/package/payapp-react)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 PayApp 결제 시스템을 React 애플리케이션에 쉽게 통합할 수 있는 라이브러리입니다.
@@ -17,11 +17,11 @@ PayApp 결제 시스템을 React 애플리케이션에 쉽게 통합할 수 있�
 ## 설치
 
 ```bash
-npm install @sanghyun-org/payapp-react
+npm install payapp-react
 # or
-yarn add @sanghyun-org/payapp-react
+yarn add payapp-react
 # or
-pnpm add @sanghyun-org/payapp-react
+pnpm add payapp-react
 ```
 
 ## 빠른 시작
@@ -29,7 +29,7 @@ pnpm add @sanghyun-org/payapp-react
 ### 기본 설정
 
 ```typescript
-import { PayAppClient } from '@sanghyun-org/payapp-react';
+import { PayAppClient } from 'payapp-react';
 
 const client = new PayAppClient({
   userid: 'your-userid',
@@ -41,7 +41,7 @@ const client = new PayAppClient({
 ### React Hook 사용
 
 ```tsx
-import { usePayApp } from '@sanghyun-org/payapp-react';
+import { usePayApp } from 'payapp-react';
 
 function PaymentButton() {
   const { requestPaymentAPI, isLoading } = usePayApp({
@@ -165,7 +165,7 @@ await cancelPayment({
 ## Webhook 처리
 
 ```typescript
-import { createWebhookHandler } from '@sanghyun-org/payapp-react/webhook';
+import { createWebhookHandler } from 'payapp-react/webhook';
 
 const handler = createWebhookHandler(
   {
@@ -282,7 +282,7 @@ import type {
   PaymentRequestResponse,
   PaymentFeedback,
   PayAppError,
-} from '@sanghyun-org/payapp-react';
+} from 'payapp-react';
 ```
 
 ## 보안 고려사항
@@ -307,4 +307,4 @@ MIT
 
 - [PayApp 개발 문서](https://www.payapp.kr/dev_center/dev_center01.html)
 - [GitHub Repository](https://github.com/sanghyun-org/payapp-react)
-- [NPM Package](https://www.npmjs.com/package/@sanghyun-org/payapp-react)
+- [NPM Package](https://www.npmjs.com/package/payapp-react)

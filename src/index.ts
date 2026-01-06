@@ -1,5 +1,5 @@
 /**
- * @sanghyun-org/payapp-react
+ * payapp-react
  * PayApp payment integration library for React
  */
 
@@ -10,7 +10,7 @@ export * from './types';
 export { PayAppClient, createPayAppClient } from './lib/client';
 
 // Webhook (선택적 import)
-// import { createWebhookHandler } from '@sanghyun-org/payapp-react/webhook'
+// import { createWebhookHandler } from 'payapp-react/webhook'
 
 // Hooks
 export {
