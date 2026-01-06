@@ -1,0 +1,71 @@
+{
+  "name": "@sanghyun-org/payapp-react",
+  "version": "1.0.0",
+  "description": "PayApp payment integration library for React",
+  "keywords": [
+    "payapp",
+    "payment",
+    "react",
+    "korea",
+    "결제",
+    "typescript"
+  ],
+  "homepage": "https://github.com/sanghyun-org/payapp-react#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanghyun-org/payapp-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sanghyun-org/payapp-react/issues"
+  },
+  "license": "MIT",
+  "author": "Sanghyun",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./webhook": {
+      "import": "./dist/webhook.mjs",
+      "require": "./dist/webhook.js",
+      "types": "./dist/webhook.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc && vite build",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "release": "npm run build && npm publish --access public"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.2",
+    "vite-plugin-dts": "^3.9.1",
+    "vitest": "^1.6.0"
+  }
+}
