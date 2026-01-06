@@ -1,6 +1,6 @@
 {
   "name": "payapp-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PayApp payment integration library for React",
   "keywords": [
     "payapp",
