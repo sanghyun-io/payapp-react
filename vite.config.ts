@@ -16,7 +16,6 @@ export default defineConfig({
     lib: {
       entry: {
         index: resolve(__dirname, 'src/index.ts'),
-        webhook: resolve(__dirname, 'src/lib/webhook.ts'),
       },
       name: 'PayAppReact',
       formats: ['es', 'cjs'],
@@ -26,11 +25,12 @@ export default defineConfig({
       },
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', 'payapp-core'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          'payapp-core': 'PayAppCore',
         },
       },
     },

@@ -3,16 +3,13 @@
  * PayApp payment integration library for React
  */
 
-// Types
-export * from './types';
-
-// Client
-export { PayAppClient, createPayAppClient } from './lib/client';
+// Re-export all from payapp-core
+export * from 'payapp-core';
 
 // Webhook (선택적 import)
 // import { createWebhookHandler } from 'payapp-react/webhook'
 
-// Hooks
+// React Hooks
 export {
   usePayApp,
   usePayAppBilling,
@@ -28,18 +25,3 @@ export type {
   UsePayAppCancelOptions,
   UsePayAppCancelReturn,
 } from './hooks';
-
-// Utils
-export {
-  loadPayAppSDK,
-  initPayAppSDK,
-  requestPaymentWithSDK,
-  requestRecurringPaymentWithSDK,
-  validateFeedback,
-  generateFeedbackKey,
-  isPaymentCompleted,
-  isPaymentCancelled,
-  isPayAppError,
-  getPayAppErrorMessage,
-  PAYAPP_ERROR_MESSAGES,
-} from './lib/client';

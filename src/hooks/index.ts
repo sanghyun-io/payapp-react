@@ -11,7 +11,7 @@ import type {
   RebillRegistResponse,
   PayAppError,
   PayAppCredentials,
-} from '../types';
+} from 'payapp-core';
 import {
   loadPayAppSDK,
   initPayAppSDK,
@@ -20,7 +20,7 @@ import {
   createPayAppClient,
   isPayAppError,
   getPayAppErrorMessage,
-} from '../lib/client';
+} from 'payapp-core';
 
 // ============================================
 // Hook 타입 정의
