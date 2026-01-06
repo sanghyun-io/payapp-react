@@ -1,6 +1,6 @@
 {
   "name": "payapp-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "PayApp payment integration library for React",
   "keywords": [
     "payapp",
@@ -50,7 +50,7 @@
     "react-dom": "^18.0.0"
   },
   "dependencies": {
-    "payapp-core": "^1.0.0"
+    "payapp-core": "^1.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
