@@ -10,13 +10,13 @@
     "결제",
     "typescript"
   ],
-  "homepage": "https://github.com/sanghyun-org/payapp-react#readme",
+  "homepage": "https://github.com/sanghyun-io/payapp-react#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sanghyun-org/payapp-react.git"
+    "url": "git+https://github.com/sanghyun-io/payapp-react.git"
   },
   "bugs": {
-    "url": "https://github.com/sanghyun-org/payapp-react/issues"
+    "url": "https://github.com/sanghyun-io/payapp-react/issues"
   },
   "license": "MIT",
   "author": "Sanghyun",

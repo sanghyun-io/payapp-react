@@ -306,5 +306,5 @@ MIT
 ## 링크
 
 - [PayApp 개발 문서](https://www.payapp.kr/dev_center/dev_center01.html)
-- [GitHub Repository](https://github.com/sanghyun-org/payapp-react)
+- [GitHub Repository](https://github.com/sanghyun-io/payapp-react)
 - [NPM Package](https://www.npmjs.com/package/payapp-react)
